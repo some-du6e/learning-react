@@ -8,13 +8,22 @@ function Counter() {
     }
     function wabisabi() {
         return (
-            <FlipNumbers height={30} width={20} color="white" play perspective={100} numbers={count.toString()}  />
+                <FlipNumbers 
+                    height={100} 
+                    width={100} 
+                    color="white" 
+                    play={true}
+                    background="transparent"
+                    perspective={1200} 
+                    numbers={count.toString()}
+                />
         )
     }
     return (
-        <div>
-            <button onClick={goUp} className="border-pink-900 border-2 rounded-xl">Click here</button>
-            {wabisabi()}        
+        <div className="flex flex-col justify-center items-center">
+            
+            {wabisabi()}      
+            <button onClick={goUp} className="border-pink-900 border-2 rounded-xl mt-4 cursor-pointer">Click here</button>  
         </div>
     )
 }

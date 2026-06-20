@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <div className="border-pink-500 flex flex-col h-screen justify-center items-center border-pink-600 border-2 ">
         <div className="border-pink-500 flex flex-col  justify-center items-center border-2 p-20 rounded-xl">
-          <h1 className="text-pink-600 text-3xl font-bold ">Counter</h1>
+          <h1 className="text-pink-600 text-3xl font-bold mb-4 ">Counter</h1>
         <Counter />
         </div>
       </div>
